@@ -1,0 +1,358 @@
+@font-face {
+    font-family: Salsa;
+    src: local("Salsa Regular"),
+    local("Salsa-Regular"),
+    url(Salsa-Regular.ttf);
+}
+
+@font-face {
+    font-family: ReenieBeanie;
+    src: local("ReenieBeanie Regular"),
+    local("ReenieBeanie-Regular"),
+    url(ReenieBeanie-Regular.ttf);
+}
+
+.body-layout {
+    background-color: #EAE7DC;
+    color: white;
+    font-family: Salsa, serif;
+}
+
+.body-layout .row {
+    margin: 0;
+}
+
+.navbar {
+    color: #E85A4F;
+    background-color: #EAE7DC;
+    height: 80px;
+}
+
+.navbar .btn {
+    border: 0;
+    transition: border 1s;
+    box-shadow: none;
+}
+
+.navbar a {
+    color: #E85A4F;
+    text-decoration: none;
+}
+
+.navbar .btn .block {
+    height: 3px;
+    background-color: transparent;
+    transition: background-color 1s;
+}
+
+.navbar .btn:hover .block {
+    background-color: #E85A4F;
+    transition: background-color 400ms;
+}
+
+.header-container {
+    position: relative;
+}
+
+.background-header-container{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    color: #F7F7F7;
+    font-size: 5rem;
+    /* 1 pixel black shadow to left, top, right and bottom */
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.title-position-header {
+    top: 20%;
+    left: 5%;
+    position: absolute;
+    font-family: Reenie Beanie, fangsong ;
+}
+
+.feature-template {
+    color: #636363;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.text-error {
+    font-size: 40px;
+}
+
+.page-error{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: rgba(125, 179, 140);
+}
+
+.card-trek {
+    background-color: #D8C3A5;
+}
+
+.btn-view {
+    background-color: #E85A4F;
+    border: 0;
+    box-shadow: none;
+}
+
+.btn-view:hover, .btn-view:focus,  .btn-view:active, .btn-view:active:focus {
+    border: 0;
+    box-shadow: none;
+    background-color: #FF704A;
+    color: black;
+}
+
+.btn-view:hover {
+    background-color: #FF704A;
+}
+.btn-view a {
+    color: black;
+    text-decoration: none;
+}
+
+.btn-error {
+    color: black;
+    box-shadow: none;
+    border: 1px solid black;
+    background-color: indianred;
+}
+
+.btn-error a{
+    color: black;
+    border: 0;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.btn-error:hover {
+    background-color: orangered ;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.btn-error a:hover{
+    color: darkred;
+    border: 0;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.card-block-body {
+    border-bottom: 1px solid grey;
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.block-search {
+    background-color: #D8C3A5;
+    border-radius: 10px 0 10px 0;
+    padding: 15px;
+    border: 1px solid grey;
+}
+
+select {
+    text-transform: capitalize;
+}
+
+.select-text-default {
+    color: grey;
+}
+
+.card-block-header {
+    position: relative;
+}
+
+.badge {
+    background: #F3C98C;
+    color: #E85A4F;
+    padding: 5px;
+    border: 1px grey solid;
+    font-size: 12px;
+}
+
+.badge-position-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: -1px;
+}
+
+.title-card {
+    font-weight: bold;
+    font-size: 22px;
+    color: #E85A4F;
+}
+
+.first-letter-capitalize::first-letter {
+    text-transform: capitalize;
+}
+
+.card-price {
+    top: 0;
+    right: 0;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+    margin: -10px;
+    background: #F3C98C;
+    color: #E85A4F;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.label {
+    color: #E85A4F;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.color-black {
+    color : #4F4F4F !important;
+}
+
+.color-grey {
+    color : #525252 !important;
+}
+
+.MuiSlider-valueLabel {
+    background-color: #17331B !important;
+    color: white !important;
+}
+
+.MuiSlider-valueLabelOpen {
+    background-color: #17331B !important;
+    color: white !important;
+}
+
+.body-content {
+    height: 100%;
+    color: #17331B;
+}
+
+.fs-12px {
+    font-size: 12px;
+}
+
+.fs-16px {
+    font-size: 16px;
+}
+
+.fs-24px {
+    font-size: 24px;
+}
+
+.fs-28px {
+    font-size: 28px;
+}
+
+.fs-36px {
+    font-size: 36px;
+}
+
+/***********************************************************************************************************************
+                                        POSITION-CLASS
+***********************************************************************************************************************/
+.center-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-element {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/***********************************************************************************************************************
+                                        BUTTON-CLASS
+***********************************************************************************************************************/
+
+.input-group-text {
+    height: 100%;
+}
+
+.color-pur-black {
+    color: #000000;
+}
+
+.color-pur-black:hover {
+    color: #000000;
+}
+
+.color-red {
+    color: #E85A4F;
+}
+
+/***********************************************************************************************************************
+                                        MODAL-CLASS
+***********************************************************************************************************************/
+
+.modal-content {
+    background-color: #D8C3A5;
+}
+
+.modal-header {
+    color : #E85A4F;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-bottom: 1px solid #000000;
+}
+
+.modal-footer {
+    border-top: 1px solid #000000;
+}
+
+.modal-title {
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-header .btn-close {
+    color : #E85A4F;
+}
+
+.indicePriceMin {
+    padding: 0;
+    margin-left: -10px;
+}
+
+.indicePriceMax {
+    padding: 0;
+    margin-right: -10px;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.btn-radius {
+    border-radius: 0.25rem;
+}
+
+.border-bottom {
+    border-bottom: 1px solid black !important;
+}
+
+.alert {
+    z-index: 1;
+    position: ABSOLUTE;
+    background-color: #E85A4F;
+    color: black;
+    font-size: 16px;
+    width: 100%;
+}
