@@ -1,13 +1,12 @@
-import logo from "../../logo.svg";
 import React from "react";
-import BtnMenueElement from "../Elements/BtnMenuelement";
+import ButtonLinkMenuElement from "../elements/ButtonLinkMenuElement";
 
 const TestRouterPage: React.ComponentType = () => {
     return (
         <div className="App">
             <header className="App-header">
                 On router
-                <BtnMenueElement
+                <ButtonLinkMenuElement
                     className="col-md-2"
                     nameMenu={"go back"}
                     path={"/"}
