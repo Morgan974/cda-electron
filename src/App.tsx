@@ -1,17 +1,34 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style/App.css';
 import "./style/style.css";
-import TestPage from "./components/page/TestPage";
-import TestRouterPage from "./components/page/TestRouterPage";
+import LoginPage from "./components/page/LoginPage";
+import AuthApi from "./config/AuthApi";
+import AdminPage from "./components/page/AdminPage";
+
+AuthApi.setup();
 
 function App() {
-  return (
+
+    const [isAuthenticated, setIsAuthenticated] = useState(AuthApi.isAuthenticated);
+
+    return (
       <Routes>
-          <Route path="/test-2" element={<TestRouterPage />} />
-          <Route path="/" element={<TestPage />} />
+          <Route path="/admin" element={
+              <AdminPage
+                  isAuthenticated={isAuthenticated}
+                  setIsAuthenticated={setIsAuthenticated}
+              />
+          } />
+          <Route path="/" element={
+              <LoginPage
+                  isAuthenticated={isAuthenticated}
+                  setIsAuthenticated={setIsAuthenticated}
+              />
+          } />
       </Routes>
+
   );
 }
 

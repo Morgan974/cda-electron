@@ -1,0 +1,1 @@
+export const AddressApi = "http://localhost:1030";

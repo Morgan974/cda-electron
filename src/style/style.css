@@ -12,6 +12,11 @@
     url(ReenieBeanie-Regular.ttf);
 }
 
+.App {
+    background: #D8C3A5;
+    height: 100vh;
+}
+
 .body-layout {
     background-color: #EAE7DC;
     color: white;
@@ -62,10 +67,9 @@
 }
 
 .title {
-    color: #F7F7F7;
+    color: #9B0000;
     font-size: 5rem;
     /* 1 pixel black shadow to left, top, right and bottom */
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .title-position-header {
@@ -355,4 +359,32 @@ select {
     color: black;
     font-size: 16px;
     width: 100%;
+}
+
+.form-group {
+  width: 500px;
+    color: black;
+    font-weight: bold;
+}
+
+.button-rounded button {
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.nav-list {
+    background: #F3C98C;
+    color: #9B0000;
+}
+
+.title {
+    font-size: 28px;
+}
+
+.row-background:nth-child(odd) {
+    background: #d3bb9a;
+}
+
+.row-background:nth-child(even) {
+
 }
